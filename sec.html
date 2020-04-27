@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style ></style>
+<script>
+function logout() {
+window.location.href="first.html"
+}
+</script>
+</head>
+<body>
+<p id="display"></p>
+<script>
+var p=new URLSearchParams(window.location.search);
+var name=localStorage.getItem('uname');
+var n=p.get('uname');
+document.getElementById('display').innerHTML="WELCOME"+" "+n;
+</script>
+<button onclick="return logout()">logout</button>
+</body>
+</html>
+
+
